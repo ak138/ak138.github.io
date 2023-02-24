@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <body style="background-color:rgb(21, 26, 25)"></body>
+        <style>
+            
+        a:link, a:visited {
+            background-color: #06453c;
+            color: white;
+            padding: 14px 25px;
+            text-decoration: none;
+            display: inline-block
+        
+        }
+        .white-box {
+             background-color:#57a196;
+             color: rgb(255, 255, 255);
+             width: 2000px;
+            height: 350px;
+        }
+        .white2-box {
+             background-color:#57a196;
+             color: rgb(255, 255, 255);
+             width: 2000px;
+            height: 500px;
+        }
+             a:hover, a:active {
+            background-color: rgb(11, 17, 13);
+        }
+        h2 {
+        color: rgb(0, 0, 0);
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+            
+        .year {
+            font-size: 5em;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
+            
+        .countdown {
+            margin: 30px;
+            background-color: rgba(0, 0, 0, 0.1);
+            width: 100%;
+            color: rgb(255, 255, 255);
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            
+        .countdown div {
+            margin: 0 15px;
+            font-size: 2.5em;
+            font-weight: 500;
+            margin-top: -25px;
+            position: relative;
+            text-align: center;
+            width: 100px;
+        }
+            
+        .countdown div::before {
+            content: "";
+            position: absolute;
+            bottom: -30px;
+            left: 0;
+            font-size: 0.35em;
+            line-height: 35px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 500;
+            width: 100%;
+            height: 35px;
+        }
+            
+        .countdown #day::before {
+            content: "Days";
+        }
+        .countdown #hour::before {
+            content: "Hours";
+        }
+        .countdown #minute::before {
+            content: "Minutes";
+        }
+        .countdown #second::before {
+            content: "Seconds";
+        }
+        h2 .white-text {
+            color: white;
+        }
+    </style>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    </head>
+    <body>
+        <a style="font-size:2vw" href="index.html">Go Back</a>
+        <h1>     </h1><br>
+        <div class="white-box">
+            <div>
+        <h3> <center>A quick JavaScript program that can converts Celsius to Fahrenheit or Fahrenheit to Celsius</center></h3><br>
+        <h1>Enter a tempeture</h1><br>
+        <input type ="text" id="textBox"><br>
+        <label>convert to: </label><br>
+        <input type ="radio" id="cButton" name="unit">
+        <label>Celsius</label><br>  
+          <input type ="radio" id="fButton" name="unit">
+        <label>Fahrenheit</label><br>
+        <button type="button" id="summitButton">sumit</button>
+        <label id="tempLabel"></label>
+        <script src="index.js"></script>  
+    </div>
+      
+    </div>
+    <a style="font-size:2vw" href="https://github.com/ak138/weather-convert-in-javascript/blob/5b12568e689b3d7438b3cd962906dca4025101ae/index.html"><center>The GitHub Repository</center></a>
+    <div>
+        <div class="white2-box">
+        <h2 class="white-text" color=white;> Countdown to New Year</h2>
+        <div class="year"><center>2024</center></div>
+        <div class="countdown">
+          <div id="day">00</div>
+          <div id="hour">00</div>
+          <div id="minute">00</div>
+          <div id="second">00</div>
+        </div>
+    </div>
+        <script src="newYear.js"></script>
+    </div>
+    </body>
+</html>
